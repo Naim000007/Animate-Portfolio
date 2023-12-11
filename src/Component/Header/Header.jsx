@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import {motion} from 'framer-motion'
 import "./Header.css";
 import Logo from "../../assets/Naim.png";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
-  return (
+    const [menuOpen , setMenuOpen] = useState(false)
+   
+      return (
     <div className="header">
       <header className="header-content">
         <a href="#logo" className="logo">
@@ -17,6 +21,10 @@ function Header() {
           <a href="#project"className="nav-link">Projects</a>
         </nav>
         <a href="#contact" className="contact-button">Contact Me</a>
+
+        <button  type="button" className="menu-button">
+            <RxHamburgerMenu  className="hamburger" />
+        </button>
       </header>
     </div>
   );
