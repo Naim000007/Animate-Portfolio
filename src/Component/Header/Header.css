@@ -1,0 +1,30 @@
+.logo-icon{
+    width: 150px;
+    /* height: 80px; */
+}
+.logo{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.header-content{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+    gap:1.5rem;
+}
+.nav-link{
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transform: color 0.1s;
+}
+.nav-link:hover{
+    color: var(--link-color);
+}
