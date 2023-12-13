@@ -1,5 +1,6 @@
 .main-section{
     max-width: 1280px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +38,7 @@
 }
 .section-description{
     color: var(--gray);
-    font-size: 1.3rem;
+    font-size: 1vw;
 
 }
 .button-group{
@@ -86,6 +87,7 @@
 @media  screen and (min-width:768px) {
     .main-section{
         flex-direction: row;
+        height: 82vh;
     }
     .content-left{
         width: 50%;
@@ -108,7 +110,7 @@
         height: 70vh;
     }
     .section-description{
-        font-size: 1rem;
+        font-size: 1vw;
         color: black;
         font-weight: 300;
         width: 78%;
